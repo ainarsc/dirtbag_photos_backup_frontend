@@ -14,8 +14,14 @@ const size = {
     primaryLight: "#F7F7F9",
     primaryHover: "rgba(0, 0, 0, 0.5)",
     secondaryHover: "#242424",
-    // main: "linear-gradient(to right, #db5f00, #ffac38, #db5f00)",
-    main: "linear-gradient(to right, #158a28, #14a76c, #158a28)",
+    themeColors: {
+      main: "#db5f00",
+      secondary: "#ffac38",
+      alternative: "#db5f00"
+    },
+    
+    //"linear-gradient(to right, #db5f00, #ffac38, #db5f00)",
+    // main: "linear-gradient(to right, #158a28, #14a76c, #158a28)",
     secondaryDark: "rgb(40, 40, 40)",
     secondaryLight: "rgba(230, 230, 230, 0.4)",
     secondaryLighter: "rgba(230, 230, 230, 0.8)",

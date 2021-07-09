@@ -12,7 +12,7 @@ const Footer = () => {
 }
 
 const Wrapper = styled.div`
-    background-color: ${({theme}) => theme.themeColors.secondary};
+    background-color: ${({theme}) => theme.primaryDark};
     height: 3vh;
     display: flex;
     flex-direction: row;

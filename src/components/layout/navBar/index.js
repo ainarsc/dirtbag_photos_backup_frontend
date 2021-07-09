@@ -7,13 +7,16 @@ export default () => {
     //Brand section
     const BRAND = 'AC PHOTO',
     //Link names
-     NAV_LINK_NAME_1 = 'LINK 1',
-     NAV_LINK_NAME_2 = 'LINK 2',
-     NAV_LINK_NAME_3 = 'LINK 3',
+     NAV_LINK_NAME_1 = 'Home',
+     NAV_LINK_NAME_2 = 'Portfolio',
+     NAV_LINK_NAME_3 = 'About',
+     NAV_LINK_NAME_4 = 'Contact',
      //Links
      LINK_1 = '/',
-     LINK_2 = '/',
-     LINK_3 = '/'
+     LINK_2 = '/portfolio',
+     LINK_3 = '/about',
+     LINK_4 = '/contact'
+
 
     return (
         <Wrapper>
@@ -27,6 +30,9 @@ export default () => {
                 </ListItem>
                 <ListItem>
                     <StyledLink activeClassName="active" to={LINK_3}>{NAV_LINK_NAME_3}</StyledLink>
+                </ListItem>
+                <ListItem>
+                    <StyledLink activeClassName="active" to={LINK_4}>{NAV_LINK_NAME_4}</StyledLink>
                 </ListItem>
             </StyledList>
         </Wrapper>

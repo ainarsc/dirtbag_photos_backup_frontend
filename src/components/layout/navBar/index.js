@@ -33,7 +33,7 @@ export default () => {
 }
 
 const Wrapper = styled.div`
-    background-color: ${({theme}) => theme.primaryDark};
+    background-color: ${({theme}) => theme.transparant};
     height: 5vh;
     display: flex;
     align-items: center;
@@ -85,6 +85,6 @@ const Brand = styled.div`
     justify-content: flex-start;
     padding-left: 20px;
     flex: 2;
-    color: ${({ theme }) => theme.themeColors.main};
+    color: ${({ theme }) => theme.primaryLight};
     font-weight: 700;
     letter-spacing: 1.6px;`

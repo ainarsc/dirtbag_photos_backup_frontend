@@ -69,15 +69,14 @@ const ListItem = styled.li`
         transition: all 300ms linear 0s;
         text-decoration: none;
         cursor: pointer;
-        /* &.active {
-        color: ${({ theme }) => theme.secondaryLight}};
-        border-bottom: 2px solid ${({ theme }) => theme.secondaryDark}; */
+        &.active {
+        color: ${({ theme }) => theme.themeColors.alternative}};
     }
     
     
 `
 const StyledLink = styled(Link)`
-    color: ${({ theme }) => theme.secondaryLight};
+    color: ${({ theme }) => theme.themeColors.alternative};
     text-decoration: none;
     font-weight: 600;
     padding: 5px;

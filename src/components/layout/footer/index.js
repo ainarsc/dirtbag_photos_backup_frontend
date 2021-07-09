@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     
 `
 const Text = styled.p`
-    font-size: 10;
+    font-size: 11px;
     color: ${(theme) => theme.secondaryLight};
 `
 

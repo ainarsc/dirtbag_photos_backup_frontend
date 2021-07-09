@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "gatsby"
 import styled from 'styled-components'
 
+
 export default () => {
     //Brand section
     const BRAND = 'AC PHOTO',
@@ -53,9 +54,10 @@ const ListItem = styled.li`
     justify-content: center;
     flex: 1;
     & a {
+        font-family: 'Zen Tokyo Zoo', cursive;
         color: #dfe6e9;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 300;
         border-bottom: 2px solid transparent;
         margin: 0 1.5rem;
         transition: all 300ms linear 0s;
@@ -86,5 +88,5 @@ const Brand = styled.div`
     padding-left: 20px;
     flex: 2;
     color: ${({ theme }) => theme.primaryLight};
-    font-weight: 700;
+    font-family: 'Zen Tokyo Zoo', cursive;
     letter-spacing: 1.6px;`

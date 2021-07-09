@@ -14,6 +14,7 @@ const size = {
     primaryLight: "#F7F7F9",
     primaryHover: "rgba(0, 0, 0, 0.5)",
     secondaryHover: "#242424",
+    transparant: "rgba(0, 0, 0, 0.5)",
     themeColors: {
       main: "#db5f00",
       secondary: "#ffac38",

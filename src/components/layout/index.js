@@ -9,12 +9,13 @@ import Main from './main';
 import theme from './theme'
 
 
+
 const Layout = ({ children }) => {
   return (
     <>
     <GlobalStyles theme={theme}/>
     <ThemeProvider theme={theme}>
-      <NavBar />
+    <NavBar />
       <Main>
         {children}
       </Main>

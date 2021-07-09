@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import BackgroundImage from '../../images/Quantum-Gradient.svg'
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -16,7 +17,10 @@ const GlobalStyles = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
-    
+    background-color: #ff0000;
+    background-image: url(${BackgroundImage});
+    background-attachment: fixed;
+    background-size: cover;
   }
  
 `

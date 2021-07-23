@@ -13,7 +13,7 @@ export default Main => {
 
 const Wrapper = styled.div`
     /* background-color: ${({theme}) => theme.primaryDark}; */
-    height: 92vh;
+    height: 91vh;
     display: flex;
     flex-direction: column;
     align-items: center;

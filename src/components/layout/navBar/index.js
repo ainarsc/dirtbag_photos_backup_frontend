@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "gatsby"
 import styled from 'styled-components'
+import MenuIcon from './menuIcon'
 
 
 export default () => {
@@ -35,13 +36,14 @@ export default () => {
                     <StyledLink activeClassName="active" to={LINK_4}>{NAV_LINK_NAME_4}</StyledLink>
                 </ListItem>
             </StyledList>
+            <MenuIcon/>
         </Wrapper>
     );
 }
 
 const Wrapper = styled.div`
     background-color: ${({theme}) => theme.transparant};
-    height: 5vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -51,20 +53,18 @@ const StyledList = styled.ul`
     margin: 0;
     display: flex;
     flex-direction: row;
-    flex: 2;
+    flex: 3;
     text-align: center;
+    align-items: center;
+    justify-content: space-around;
     list-style: none; 
 `
 const ListItem = styled.li`
-    display: flex;
-    justify-content: center;
-    flex: 1;
     & a {
         font-family: 'Zen Tokyo Zoo', cursive;
         color: #dfe6e9;
         text-transform: uppercase;
         font-weight: 300;
-        border-bottom: 2px solid transparent;
         margin: 0 1.5rem;
         transition: all 300ms linear 0s;
         text-decoration: none;
@@ -91,7 +91,7 @@ const Brand = styled.div`
     align-items: center;
     justify-content: flex-start;
     padding-left: 20px;
-    flex: 2;
+    flex: 1;
     color: ${({ theme }) => theme.primaryLight};
     font-family: 'Zen Tokyo Zoo', cursive;
     letter-spacing: 1.6px;`

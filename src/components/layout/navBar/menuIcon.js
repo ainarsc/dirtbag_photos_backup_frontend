@@ -1,14 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 
-export default function menuIcon() {
+export default function MenuIcon() {
+    const [visible, setVisible] = useState(false)
+
+
     return (
         <Wrapper>
-            <Icon id="nav-icon3">
-                <Span1></Span1>
-                <Span2></Span2>
-                <Span3></Span3>
-                <Span4></Span4>
+            <Icon onClick={() => setVisible(!visible)}>
+                <Line className={visible && "open"}/>
+                <Line className={visible && "open"}/>
+                <Line className={visible && "open"}/>
+                <Line className={visible && "open"}/>
             </Icon>
         </Wrapper>
        
@@ -19,12 +22,44 @@ export default function menuIcon() {
 const Wrapper = styled.div`
     margin: 0;
     padding: 0; 
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 `
 const Icon = styled.div`
-    
+    /* position: absolute; */
+    /* right: 2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 2rem;
+
+`
+const Line = styled.span`
+    top: 0px;
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background: #f7f7f9;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
 `
 const Span1 = styled.span`
     top: 0px;
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background: #f7f7f9;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
     &.open {
         top: 18px;
         width: 0%;

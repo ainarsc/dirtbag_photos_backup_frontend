@@ -63,6 +63,8 @@ const TopLine = styled(Line)`
 const TopMiddleLine = styled(Line)`
     /* top: 18px; */
     &.open {
+        top: -10px;
+        width: 2.6rem;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -72,6 +74,8 @@ const TopMiddleLine = styled(Line)`
 const BottomMiddleLine = styled(Line)`
     /* top: 18px; */
     &.open {
+        top: 10px;
+        width: 2.6rem;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);

@@ -25,6 +25,7 @@ const Wrapper = styled.div`
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    z-index: 99;
 `
 const Icon = styled.div`
     /* position: absolute; */

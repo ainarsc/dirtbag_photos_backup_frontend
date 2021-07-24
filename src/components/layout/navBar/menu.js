@@ -1,30 +1,23 @@
-import React from 'react';
-import { Link } from "gatsby"
+import React from 'react'
 import styled from 'styled-components'
-import MenuIcon from './menuIcon'
-import SideBar from './menu'
+import { Link } from "gatsby"
+ 
+ export default SideBar => {
 
-
-
-export default () => {
-    //Brand section
-    const BRAND = 'AC PHOTO',
     //Link names
-     NAV_LINK_NAME_1 = 'Home',
-     NAV_LINK_NAME_2 = 'Portfolio',
-     NAV_LINK_NAME_3 = 'About',
-     NAV_LINK_NAME_4 = 'Contact',
-     //Links
-     LINK_1 = '/',
-     LINK_2 = '/portfolio',
-     LINK_3 = '/about',
-     LINK_4 = '/contact'
+    const NAV_LINK_NAME_1 = 'Home',
+    NAV_LINK_NAME_2 = 'Portfolio',
+    NAV_LINK_NAME_3 = 'About',
+    NAV_LINK_NAME_4 = 'Contact',
+    //Links
+    LINK_1 = '/',
+    LINK_2 = '/portfolio',
+    LINK_3 = '/about',
+    LINK_4 = '/contact'
 
-
-    return (
-        <Wrapper>
-            <Brand>{BRAND}</Brand> 
-            {/* <StyledList>
+     return (
+         <Menu>
+             <StyledList>
                 <ListItem>
                     <StyledLink exact activeClassName="active" to={LINK_1}>{NAV_LINK_NAME_1}</StyledLink>
                 </ListItem>
@@ -37,46 +30,46 @@ export default () => {
                 <ListItem>
                     <StyledLink activeClassName="active" to={LINK_4}>{NAV_LINK_NAME_4}</StyledLink>
                 </ListItem>
-            </StyledList> */}
-            <MenuIcon/>
-            <SideBar/>
-        </Wrapper>
-    );
-}
+             </StyledList>
+         </Menu>
+     )
+ }
 
-const Wrapper = styled.div`
-    background-color: ${({theme}) => theme.transparant};
-    height: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-`
+ const Menu = styled.div`
+    background: rgba(230, 230, 230, 0.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    height: 100%;
+    z-index: 98;
+
+ `
+
 const StyledList = styled.ul`
     padding: 0;
-    margin: 0;
+    margin-top: 5rem;
+    height: 30%;
     display: flex;
-    flex-direction: row;
-    flex: 3;
-    text-align: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-around;
     list-style: none; 
 `
+
 const ListItem = styled.li`
     & a {
         font-family: 'Zen Tokyo Zoo', cursive;
         color: #dfe6e9;
         text-transform: uppercase;
         font-weight: 300;
-        margin: 0 1.5rem;
+        margin: 0 1rem;
         transition: all 300ms linear 0s;
         text-decoration: none;
         cursor: pointer;
         &.active {
         color: ${({ theme }) => theme.themeColors.alternative}};
     }
-    
-    
 `
 const StyledLink = styled(Link)`
     color: ${({ theme }) => theme.themeColors.alternative};
@@ -87,14 +80,5 @@ const StyledLink = styled(Link)`
     &:hover {
       color: ${({ theme }) => theme.themeColors.alternative};
     }
-    
 `
-const Brand = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 20px;
-    flex: 1;
-    color: ${({ theme }) => theme.primaryLight};
-    font-family: 'Zen Tokyo Zoo', cursive;
-    letter-spacing: 1.6px;`
+ 

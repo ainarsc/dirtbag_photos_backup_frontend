@@ -53,15 +53,12 @@ const Line = styled.span`
 `
 
 const TopLine = styled(Line)`
-    /* top: 18px; */
     &.open {
-        top: 18px;
+        top: 10px;
         width: 0%;
-        left: 50%;
     }
 `
 const TopMiddleLine = styled(Line)`
-    /* top: 18px; */
     &.open {
         top: -10px;
         width: 2.6rem;
@@ -72,7 +69,6 @@ const TopMiddleLine = styled(Line)`
     }
 `
 const BottomMiddleLine = styled(Line)`
-    /* top: 18px; */
     &.open {
         top: 10px;
         width: 2.6rem;
@@ -83,10 +79,8 @@ const BottomMiddleLine = styled(Line)`
     }
 `
 const BottomLine = styled(Line)`
-    /* top: 36px; */
     &.open {
-        top: 18px;
+        top: -10px;
         width: 0%;
-        left: 50%;
     }
 `

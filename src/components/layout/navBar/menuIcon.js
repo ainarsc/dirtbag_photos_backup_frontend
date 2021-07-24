@@ -8,10 +8,10 @@ export default function MenuIcon() {
     return (
         <Wrapper>
             <Icon onClick={() => setVisible(!visible)}>
-                <Line className={visible && "open"}/>
-                <Line className={visible && "open"}/>
-                <Line className={visible && "open"}/>
-                <Line className={visible && "open"}/>
+                <TopLine className={visible && "open"}/>
+                <TopMiddleLine className={visible && "open"}/>
+                <BottomMiddleLine className={visible && "open"}/>
+                <BottomLine className={visible && "open"}/>
             </Icon>
         </Wrapper>
        
@@ -51,23 +51,17 @@ const Line = styled.span`
     position: relative;
     transform-origin: 1px;
 `
-const Span1 = styled.span`
-    top: 0px;
-    width: 2rem;
-    height: 0.25rem;
-    border-radius: 10px;
-    background: #f7f7f9;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
+
+const TopLine = styled(Line)`
+    /* top: 18px; */
     &.open {
         top: 18px;
         width: 0%;
         left: 50%;
     }
 `
-const Span2 = styled.span`
-    top: 18px;
+const TopMiddleLine = styled(Line)`
+    /* top: 18px; */
     &.open {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
@@ -75,8 +69,8 @@ const Span2 = styled.span`
         transform: rotate(45deg);
     }
 `
-const Span3 = styled.span`
-    top: 18px;
+const BottomMiddleLine = styled(Line)`
+    /* top: 18px; */
     &.open {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
@@ -84,8 +78,8 @@ const Span3 = styled.span`
         transform: rotate(-45deg);
     }
 `
-const Span4 = styled.span`
-    top: 36px;
+const BottomLine = styled(Line)`
+    /* top: 36px; */
     &.open {
         top: 18px;
         width: 0%;

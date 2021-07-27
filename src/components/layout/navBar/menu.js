@@ -36,7 +36,7 @@ import { Link } from "gatsby"
  }
 
  const Menu = styled.div`
-    background: rgba(230, 230, 230, 0.3);
+    background: rgba(15, 15, 15, 0.5);
     position: fixed;
     top: 0;
     right: 0;

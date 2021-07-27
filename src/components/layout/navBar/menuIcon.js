@@ -1,17 +1,14 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
 
-export default function MenuIcon() {
-    const [visible, setVisible] = useState(false)
-
-
+export default function MenuIcon({isVisible, handleVisibility}) {
     return (
         <Wrapper>
-            <Icon onClick={() => setVisible(!visible)}>
-                <TopLine className={visible && "open"}/>
-                <TopMiddleLine className={visible && "open"}/>
-                <BottomMiddleLine className={visible && "open"}/>
-                <BottomLine className={visible && "open"}/>
+            <Icon onClick={() => handleVisibility(!isVisible)}>
+                <TopLine className={isVisible && "open"}/>
+                <TopMiddleLine className={isVisible && "open"}/>
+                <BottomMiddleLine className={isVisible && "open"}/>
+                <BottomLine className={isVisible && "open"}/>
             </Icon>
         </Wrapper>
        

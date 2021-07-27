@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components'
 import MenuIcon from './menuIcon'
 import SideBar from './menu'
@@ -6,14 +6,16 @@ import SideBar from './menu'
 
 
 export default () => {
+    //Sidebar state
+    const [isVisible, setVisibility] = useState(false)
     //Brand section
     const BRAND = 'AC PHOTO'
 
     return (
         <Wrapper>
             <Brand>{BRAND}</Brand> 
-            <MenuIcon/>
-            <SideBar/>
+            <MenuIcon isVisible={isVisible} handleVisibility={setVisibility}/>
+            {isVisible && <SideBar isVisible={[isVisible, setVisibility]}/>}
         </Wrapper>
     );
 }

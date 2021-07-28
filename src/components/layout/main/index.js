@@ -14,8 +14,8 @@ export const Main = ({ children }) => {
 const Wrapper = styled.div`
     /* background-color: ${({theme}) => theme.primaryDark}; */
     height: 91vh;
-    display: flex;
-    flex-direction: column;
+    
+    /* flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 `

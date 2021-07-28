@@ -5,7 +5,7 @@ import {ThemeProvider} from 'styled-components';
 import PropTypes from "prop-types"
 import NavBar from "./navBar"
 import Footer from "./footer"
-import Main from './main';
+import {Main} from './main';
 import theme from './theme'
 
 

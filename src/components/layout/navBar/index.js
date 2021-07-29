@@ -21,7 +21,7 @@ export default () => {
 }
 
 const Wrapper = styled.div`
-    background-color: ${({theme}) => theme.transparant};
+    
     height: 6vh;
     display: flex;
     align-items: center;

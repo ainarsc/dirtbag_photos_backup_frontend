@@ -13,8 +13,9 @@ export const Main = ({ children }) => {
 
 const Wrapper = styled.div`
     /* background-color: ${({theme}) => theme.primaryDark}; */
-    height: 91vh;
-    
+    height: 97vh;
+    /* position: relative; */
+    width: 100%;
     /* flex-direction: column;
     align-items: center;
     justify-content: space-evenly; */

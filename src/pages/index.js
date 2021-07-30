@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from '../components/layout'
 import styled from 'styled-components'
-import { StaticImage } from "gatsby-plugin-image"
 import mountains from '../images/mountains.jpg'
 import exploring from'../images/exploring.jpg'
 import travel from '../images/travel.jpg'
@@ -27,20 +26,6 @@ const IndexPage = () => {
           <Box image={climbing}>
             
           </Box>
-          {/* <List>
-            <ListItem>
-              travel
-            </ListItem>
-            <ListItem>
-              mountains
-            </ListItem>
-            <ListItem>
-              climbing
-            </ListItem>
-            <ListItem>
-              exploring
-            </ListItem>
-          </List> */}
         </Wrapper>
       </Layout>
   )
@@ -64,24 +49,4 @@ const Box = styled.div`
   opacity: 0.5;
 
 `
-
-//Headlines
-const List = styled.ul`
-  display: flex;
-  width: max-content;
-  flex-direction: column;
-  list-style: none; 
-  padding: 5px 1rem;
-  background-color: rgba(5, 5, 5, 0.8);
-  
-`
-const ListItem = styled.li`
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 24px;
-  letter-spacing: 7px;
-  padding: 5px 0;
-`
-
-
 export default IndexPage

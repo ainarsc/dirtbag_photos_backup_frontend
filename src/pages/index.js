@@ -51,7 +51,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: stretch;
   height: 100%;
-  background-color: rgba(245, 245, 245, 0.5);
+  
 `
 
 const Box = styled.div`
@@ -62,8 +62,9 @@ const Box = styled.div`
   background-image: url(${(props) => props.image});
   background-position: center;
   background-size: cover;
-  border: 1px solid rgba(15, 15, 15, 0.3);
-  opacity: 0.4;
+  border-left: 1px solid rgba(101, 116, 58, 0.6);
+  border-right: 1px solid rgba(101, 116, 58, 0.6);
+  opacity: 0.7;
 `
 const HeadlineArea = styled.div`
   position: fixed;
@@ -74,7 +75,7 @@ const HeadlineArea = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(15, 15, 15, 0.3);
+  background-color: rgba(230, 230, 230, 0.4);
 ` 
 const Headline = styled.div`
   text-decoration: underline;

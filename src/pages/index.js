@@ -19,9 +19,25 @@ const IndexPage = () => {
           <Box image={exploring}/>
           <Box image={climbing}/>
         </Wrapper>
-        <Headline>
-          dirtbag photography
-        </Headline>
+        <HeadlineArea>
+          <Headline>
+            dirtbag photography
+          </Headline>
+          <SubHeading>
+            <Tag>
+              Foo
+            </Tag>
+            <Tag>
+              Foo
+            </Tag>
+            <Tag>
+              Foo
+            </Tag>
+            <Tag>
+              Foo
+            </Tag>
+          </SubHeading>
+        </HeadlineArea>
       </Layout>
   )
 }
@@ -44,19 +60,31 @@ const Box = styled.div`
   border: 1px solid rgba(15, 15, 15, 0.3);
   opacity: 0.4;
 `
-const Headline = styled.div`
+const HeadlineArea = styled.div`
   position: fixed;
   top: 40%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+` 
+const Headline = styled.div`
   text-decoration: underline;
   font-size: 2.5rem;
   letter-spacing: 8px;
-` 
-const Text = styled.span`
-  font-size: 2.5em;
+  padding-bottom: 1.5rem;
+`
+
+const SubHeading = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+`
+
+const Tag = styled.span`
+  font-size: 2em;
+  display: flex;
   padding: 2px 0;
   letter-spacing: 7px;
   font-weight: 100;

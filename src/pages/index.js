@@ -9,6 +9,11 @@ import climbing from '../images/climbing.jpg'
 
 // markup
 const IndexPage = () => {
+  const BRABD = "dirtbag photography",
+  CATEGORY_1 = "travel",
+  CATEGORY_2 = "mountains",
+  CATEGORY_3 = "explore",
+  CATEGORY_4 = "climbing"
 
   //Cant obstruct Static image into seperate component due to some limitations in gatsby staticimage
   return (
@@ -21,20 +26,20 @@ const IndexPage = () => {
         </Wrapper>
         <HeadlineArea>
           <Headline>
-            dirtbag photography
+            {BRABD}
           </Headline>
           <SubHeading>
             <Tag>
-              Foo
+              {CATEGORY_1}
             </Tag>
             <Tag>
-              Foo
+              {CATEGORY_2}
             </Tag>
             <Tag>
-              Foo
+              {CATEGORY_3}
             </Tag>
             <Tag>
-              Foo
+              {CATEGORY_4}
             </Tag>
           </SubHeading>
         </HeadlineArea>
@@ -46,7 +51,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: stretch;
   height: 100%;
-  background-color: rgba(245, 245, 245, 1);
+  background-color: rgba(245, 245, 245, 0.5);
 `
 
 const Box = styled.div`
@@ -64,10 +69,12 @@ const HeadlineArea = styled.div`
   position: fixed;
   top: 40%;
   width: 100%;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(15, 15, 15, 0.3);
 ` 
 const Headline = styled.div`
   text-decoration: underline;
